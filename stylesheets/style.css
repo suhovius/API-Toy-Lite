@@ -1,0 +1,23 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+.header { font-size: 24pt; float: left; }
+.hidden { display: none; }
+.clickable { cursor: pointer; }
+/* Tables */
+table { border: 1px solid black; border-collapse: collapse; -moz-border-radius: 5px; }
+td, th { border: 1px solid black; padding: 3px; }
+th {background: lightgrey;}
+table.stripy tr:nth-child(2n+1){ background: #FFE4B5; }
+table.stripy tr:nth-child(2n){ background: #FFFACD; }
+tr {background: cornsilk;}
+tr:hover {background: lightgreen;}
+.row_selected { background: orange;}
+td.status { text-align: center; }
+.developers_info {background: lightgreen;}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Toy Lite</title>
+    <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="javascripts/api_test_tool.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="header">API Toy Lite</div>
+    <br/>
+    <hr/>
+
+    <h2>Quick manual</h2>
+    <div class="manual">
+      <p>Enter an appropriate data into fields at the form below and click the "SEND REQUEST!" button.</p>
+    </div>
+
+
+    <div id="json_test_tool">
+    <h3>API Test Tool Form</h3>
+    <b><label for="Method">Method</label></b>
+    <br/>
+    <select id="rest_method" name="rest[method]"><option value="GET">GET</option>
+    <option value="POST">POST</option>
+    <option value="PUT">PUT</option>
+    <option value="DELETE">DELETE</option></select>
+    <br/>
+    <b><label for="Url">Url</label></b>
+    <br/>
+    <input id="rest_url" name="url" size="100" type="text" />
+    <br/>
+    <b><label for="Request_data">Request data</label></b>
+    <br/>
+    <textarea cols="130" id="request_data" name="request_data" rows="5"></textarea>
+    <br/>
+    <input id="json_submit" name="commit" type="submit" value="SEND REQUEST!" />
+    <b class="attention">Attention: Please, send a valid JSON to server!</b> If nothing happens after submit, see this error with Fire Bug.
+    <p>
+    </div>
+
+
+    <b>Server response:</b> <img alt="Wait_small" class="hidden" id="waiting" src="images/wait_small.gif" />
+     <div id="server_response"></div>
+    </p>
+
+
+  </body>
+</html>
+
