@@ -4,5 +4,5 @@ h3. How to use
 
  # Put all this repo into some folder at your site public directory (e.g. "/public/api_toy" )
  # Don't forget to add this dir (e.g. "/public/api_toy" ) into gitignore file
- # Open "<your_domain>/<your_api_toy_folder_name>/apy_toy.html" to get access for api testing page
+ # Open "your_domain_name/your_api_toy_folder_name/apy_toy.html" to get access for api testing page
 
